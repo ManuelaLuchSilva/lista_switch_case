@@ -6,14 +6,76 @@
     */
 
     //ENTRADA
-    const hemisfério = prompt("Em qual hemisferio esta(N/S)")
-    const mes = prompt("Em qual mês?(!diga o nome!)")
+    const hemisfério = prompt("Em qual hemisferio esta(N/S)").toUpperCase().trim()
+    const mes = prompt("Em qual mês?(!diga o nome!)").toLowerCase().trim()
     //PROCESSAMENTO
     switch (hemisfério) {
         case "N":
-            switch:
-                case:
+            switch(mes){
+                case"abril":
+                case"maio":
+                case"junho":
+                document.write("Primavera");
+                break;
+
+                case"julho":
+                case"agosto":
+                case"setembro":
+                document.write("Verão");
+                break;
+
+                case"outubro":
+                case"novembro":
+                case"dezenbro":
+                document.write("Outono");
+                break;
+
+                case"janeiro":
+                case"fevereiro":
+                case"março":
+                case"marco":
+                document.write("Inverno");
+                break;
+
+                default:
+                document.write("Invalido");
+                break;
             }
+            break;
+            case "S":
+            switch(mes){
+                case"abril":
+                case"maio":
+                case"junho":
+                document.write("Outono");
+                break;
+
+                case"julho":
+                case"agosto":
+                case"setembro":
+                document.write("Inverno");
+                break;
+
+                case"outubro":
+                case"novembro":
+                case"dezenbro":
+                document.write("Outono");
+                break;
+
+                case"janeiro":
+                case"fevereiro":
+                case"março":
+                case"marco":
+                document.write("Inverno");
+                break;
+
+                default:
+                document.write("Invalido");
+                break;
+            }
+            default:
+            document.write("Invalido")
+        }
 
     //SAÍDA
 
