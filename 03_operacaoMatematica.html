@@ -8,11 +8,135 @@
     */
 
     //ENTRADA
-
+    const num1 = Number(prompt("Informe um numero"))
+    const op = prompt("Qual operação")
+    const num2 = Number(prompt("Informe outro numero"))
 
     //PROCESSAMENTO
+    switch (op) {
+        case "+":
+            let resMa = num1 + num2;
+            alert(`Resultado é ${resMa}`)
+            switch (resMa) {
+                case (resMa % 2 == 0):
+                    alert("Par");
+                    break;
+                default:
+                    alert("Impar");
+                    switch (resMa) {
+                        case (resMa >= 0):
+                            alert("Positivo");
+                            break;
+                        default:
+                            alert("Negativo");
 
-    
+                            switch (resMa) {
+                                case (resMa % 1 == 0):
+                                    alert("Inteiro");
+                                    break;
+                                default:
+                                    alert("Decimal");
+                                    break;
+                                }
+                            break;
+                        }
+                    break;
+                }
+                    
+                case "-":
+                    let resMe = num1 - num2;
+                    alert(`Resultado é ${resMe}`)
+                    switch (resMe) {
+                        case (resMe % 2 == 0):
+                            alert("Par");
+                            break;
+                        default:
+                            alert("Impar");
+                            switch (resMe) {
+                                case (resMe >= 0):
+                                    alert("Positivo");
+                                    break;
+                                default:
+                                    alert("Negativo");
+        
+                                    switch (resMe) {
+                                        case (resMe % 1 == 0):
+                                            alert("Inteiro");
+                                            break;
+                                        default:
+                                            alert("Decimal");
+                                            break;
+                                        }
+                                    break;
+                                }
+                            break;
+                        }
+                    break;
+                case "*":
+                    let resVe = num1 * num2;
+                    alert(`Resultado é ${resVe}`)
+                    switch (resVe) {
+                        case (resVe % 2 == 0):
+                            alert("Par");
+                            break;
+                        default:
+                            alert("Impar");
+                            switch (resVe) {
+                                case (resVe >= 0):
+                                    alert("Positivo");
+                                    break;
+                                default:
+                                    alert("Negativo");
+        
+                                    switch (resVe) {
+                                        case (resVe % 1 == 0):
+                                            alert("Inteiro");
+                                            break;
+                                        default:
+                                            alert("Decimal");
+                                            break;
+                                        }
+                                    break;
+                                }
+                            break;
+                        }
+                    break;
+                case "/":
+                    let resDi = num1 / num2
+                    alert(`Resultado é ${resDi}`)
+                    switch (resDi) {
+                        case (resDi % 2 == 0):
+                            alert("Par");
+                            break;
+                        default:
+                            alert("Impar");
+                            switch (resDi) {
+                                case (resDi >= 0):
+                                    alert("Positivo");
+                                    break;
+                                default:
+                                    alert("Negativo");
+        
+                                    switch (resDi) {
+                                        case (resd % 1 == 0):
+                                            alert("Inteiro");
+                                            break;
+                                        default:
+                                            alert("Decimal");
+                                            break;
+                                        }
+                                    break;
+                                }
+                            break;
+                        }
+                    break;
+                default:
+                    alert("Invalid");
+                    break;
+
+            }
+
+
     //SAÍDA
 
 </script>

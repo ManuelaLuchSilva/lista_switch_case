@@ -5,10 +5,18 @@
     */
 
     //ENTRADA
-
-    
+    const num = Number(prompt("Insira um número"))
     //PROCESSAMENTO
-
+    switch (valid) {
+        case(num%2==0):
+            document.write("Par");
+            break;
+        case(num%2==1):
+            document.write("Impar");
+            break;
+        default:
+            document.write("Invalid")
+    }
     
     //SAÍDA
 
